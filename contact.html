@@ -6,13 +6,13 @@
 <head>
 
     <!-- Metas -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<meta name="keywords"
-    content="Digital marketing,Graphic design,Logo design,website design,Social media marketing,Video editing" />
-<meta name="description" content="Digital Marketing Company & Institute" />
-<meta name="author" content="Kreative_Kudi" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="keywords"
+        content="Digital marketing,Graphic design,Logo design,website design,Social media marketing,Video editing" />
+    <meta name="description" content="Digital Marketing Company & Institute" />
+    <meta name="author" content="Kreative_Kudi" />
 
 
     <!-- Title  -->
@@ -168,10 +168,7 @@
 
                             <h4 class="fw-700 color-font mb-50">Get In Touch.</h4>
 
-                            <form
-                                action="https://script.google.com/macros/s/AKfycbzkkns2bTGTznanwxwSonVciWsNcYKK9JvwNh8BmKDIT-KazPJg8-4YqpVUrdhCzLc2/exec"
-                                name="contact form" method="POST">
-                                <div class="messages"></div>
+                            <form action="https://formsubmit.co/kreativekudi@gmail.com" method="POST">
 
                                 <div class="controls">
 
@@ -181,8 +178,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <input id="form_email" type="email" name="Email" placeholder=" Your Email"
-                                            required="required">
+                                        <input type="email" name="email" placeholder="Email Address" required="required">
                                     </div>
 
                                     <div class="form-group">
@@ -194,22 +190,12 @@
                                         <textarea id="form_message" name="Message" placeholder="Message" rows="4"
                                             required="required"></textarea>
                                     </div>
-
+                                    <input type="hidden" name="_template" value="table">
                                     <button type="submit" class="butn bord"><span>Send Message</span></button>
+                                    <input type="hidden" name="_autoresponse"
+                                        value="Thank you for getting in touch!  We appreciate you contacting 'KREATIVE KUDI'. One of our colleagues will get back in touch with you soon!Have a great day!">
                                 </div>
                             </form>
-                            <script>
-                                const scriptURL = 'https://script.google.com/macros/s/AKfycbzkkns2bTGTznanwxwSonVciWsNcYKK9JvwNh8BmKDIT-KazPJg8-4YqpVUrdhCzLc2/exec'
-                                const form = document.forms['contact form']
-
-                                form.addEventListener('submit', e => {
-                                    e.preventDefault()
-                                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                                        .then(response => alert("Thank you! your form is submitted successfully."))
-                                        .then(() => { window.location.reload(); })
-                                        .catch(error => console.error('Error!', error.message))
-                                })
-                            </script>
                         </div>
                     </div>
                     <div class="col-lg-5 offset-lg-1">
@@ -270,7 +256,7 @@
                         <div class="item">
                             <img src="personal logo/12.png" alt="">
                         </div>
-                    </div>        
+                    </div>
                     <div class="col-lg-4">
                         <div class="item md-mb50">
                             <div class="title">
@@ -317,7 +303,8 @@
 
                             </div>
                             <div class="copy-right">
-                                <p>© <a href="https://www.linkedin.com/company/kreative-kudi-digital-marketing-agency/">Kreative Kudi </a></p>
+                                <p>© <a href="https://www.linkedin.com/company/kreative-kudi-digital-marketing-agency/">Kreative
+                                        Kudi </a></p>
                                 <p>All rights reserved 2020</p>
                             </div>
                         </div>

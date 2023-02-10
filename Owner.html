@@ -680,11 +680,8 @@
                 <div class="col-lg-10">
                     <div class="form wow fadeInUp" data-wow-delay=".5s">
                         <form
-                            action="https://script.google.com/macros/s/AKfycbzkkns2bTGTznanwxwSonVciWsNcYKK9JvwNh8BmKDIT-KazPJg8-4YqpVUrdhCzLc2/exec"
-                            name="contact form" method="POST">
-
-                            <div class="messages"></div>
-
+                            action="https://formsubmit.co/kreativekudi@gmail.com" name="contact form" method="POST">
+                            
                             <div class="controls">
 
                                 <div class="row">
@@ -694,11 +691,8 @@
                                                 required="required">
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <input id="form_email" type="email" name="Email" placeholder="Email"
-                                                required="required">
-                                        </div>
+                                    <div class="col-lg-4">  
+                                        <input type="email" name="email" placeholder="Email Address" required="required">
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="form-group">
@@ -712,25 +706,16 @@
                                                 required="required"></textarea>
                                         </div>
                                     </div>
+                                    <input type="hidden" name="_template" value="table">
+                                    
                                     <div class="col-12">
                                         <button type="submit" class="butn bord"><span>Send Message</span></button>
                                     </div>
+                                    <input type="hidden" name="_autoresponse"
+                                        value="Thank you for getting in touch!  We appreciate you contacting 'KREATIVE KUDI'. One of our colleagues will get back in touch with you soon!Have a great day!">
                                 </div>
                             </div>
                         </form>
-
-                        <script>
-                            const scriptURL = 'https://script.google.com/macros/s/AKfycbzkkns2bTGTznanwxwSonVciWsNcYKK9JvwNh8BmKDIT-KazPJg8-4YqpVUrdhCzLc2/exec'
-                            const form = document.forms['contact form']
-
-                            form.addEventListener('submit', e => {
-                                e.preventDefault()
-                                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                                    .then(response => alert("Thank you! your form is submitted successfully."))
-                                    .then(() => { window.location.reload(); })
-                                    .catch(error => console.error('Error!', error.message))
-                            })
-                        </script>
                     </div>
                 </div>
             </div>
