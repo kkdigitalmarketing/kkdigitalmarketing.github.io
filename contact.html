@@ -39,7 +39,7 @@
         and engaging content creation. Enhance brand identity and increase customer engagement through captivating logo design,
         graphic design, and effective brochure design. Our top-notch services help you reach and connect with your audience across multiple platforms. 
         Unlock the power of data-driven marketing through web analytics, conversion optimization, and targeted advertising, 
-        maximizing ROI. Let us optimize your online presence and drive business growth."/>
+        maximizing ROI. Let us optimize your online presence and drive business growth." />
     <meta name="author" content="Kreative_Kudi" />
 
     <!-- Google tag (gtag.js) -->
@@ -205,37 +205,53 @@
 
                             <h4 class="fw-700 color-font mb-50">Get In Touch.</h4>
 
-                            <form action="https://formsubmit.co/kreativekudi@gmail.com" method="POST">
+                            <form method="POST">
 
                                 <div class="controls">
 
                                     <div class="form-group">
-                                        <input id="form_name" type="text" name="Name" placeholder="Your Name"
+                                        <input id="formName" type="text" name="Name" placeholder="Your Name"
                                             required="required">
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="email" name="email" placeholder="Email Address"
+                                        <input type="email" name="email" id="formEmail" placeholder="Email Address"
                                             required="required">
                                     </div>
 
                                     <div class="form-group">
-                                        <input id="form_tel" type="tel" name="Phone" placeholder=" Your MOb.No."
+                                        <input id="formPhone" type="tel" name="Phone" placeholder=" Your MOb.No."
                                             required="required">
                                     </div>
 
                                     <div class="form-group">
-                                        <textarea id="form_message" name="Message" placeholder="Message" rows="4"
+                                        <textarea id="formMessage" name="Message" placeholder="Message" rows="4"
                                             required="required"></textarea>
                                     </div>
                                     <input type="hidden" name="_template" value="table">
-                                    <button type="submit" class="butn bord"><span>Send Message</span></button>
-                                    <input type="hidden" name="_autoresponse"
-                                        value="Hi! Thanks for connecting 'Kreative Kudi Digital Marketing Company'.We’ll get back to you shortly.Have a great day!Thank you!">
+                                    <button type="submit" class="butn bord" onclick="gotowhatsapp()"><span>Send
+                                            Message</span></button>
                                 </div>
                             </form>
                         </div>
                     </div>
+                    <script>
+                        function gotowhatsapp() {
+
+                            var form_name = document.getElementById("formName").value;
+                            var form_email = document.getElementById("formEmail").value;
+                            var form_phone = document.getElementById("formPhone").value;
+                            var formMessage = document.getElementById("formMessage").value;
+
+                            var url = "https://wa.me/918160581704?text="
+                                + "Name: " + form_name + "%0a"
+                                + "Email: " + form_email + "%0a"
+                                + "Phone: " + form_phone + "%0a"
+                                + "Message: " + formMessage;
+
+                            window.open(url, '_blank').focus();
+                        }
+                    </script>
                     <div class="col-lg-5 offset-lg-1">
                         <div class="cont-info">
                             <h4 class="fw-700 color-font mb-50">Contact Info.</h4>
