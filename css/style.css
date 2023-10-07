@@ -41,8 +41,8 @@
 
 .popup-tab {
   position: fixed;
-  bottom: 20px; /* Adjust the position as needed */
-  right: 20px; /* Adjust the position as needed */
+  bottom: 5px; /* Adjust the position as needed */
+  right: 5px; /* Adjust the position as needed */
   background-color: #fff; /* Tab background color */
   color: #111215; /* Tab text color */
   border-radius: 20px;
