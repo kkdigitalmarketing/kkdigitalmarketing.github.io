@@ -37,6 +37,43 @@
 
 ---------------------------------------------------------------- */
 /* ====================== [ Start Typography  ] ====================== */
+/* Add this to your existing CSS or in a new <style> tag */
+
+.popup-tab {
+  position: fixed;
+  bottom: 20px; /* Adjust the position as needed */
+  right: 20px; /* Adjust the position as needed */
+  background-color: #fff; /* Tab background color */
+  color: #111215; /* Tab text color */
+  border-radius: 20px;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 999;
+  display: none;
+}
+
+.popup-tab-content {
+  display: flex;
+  flex-direction: column; /* Display image and text in a column */
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+  padding: 8px;
+}
+
+.popup-tab-close {
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 100%;
+}
+
+.popup-tab img {
+  max-width: 50px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+
 * {
   margin: 0;
   padding: 0;

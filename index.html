@@ -242,6 +242,20 @@
         </div>
     </header>
 
+
+    <div id="popup-tab" class="popup-tab">
+        <div class="popup-tab-content">
+            <div class="popup-tab-close" id="close-popup-tab">&times;</div>
+            <img src="personal logo\icons8-whatsapp.gif" alt="Your Image">
+            <h3 class="color-font">Your Business need Attention??</h3>
+            <p>Click on this tab to open WhatsApp and start a chat.</p>
+            <a href="https://wa.me/918160581704?text=Hi%20There!" target="_blank">
+                <button class="butn bord">Open WhatsApp</button>
+            </a>
+        </div>
+    </div>
+
+
     <!-- ==================== End Slider ==================== -->
 
 
@@ -1006,7 +1020,30 @@
 
 
 
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                var popupTab = document.getElementById("popup-tab");
+                if (popupTab) {
+                    popupTab.style.display = "block";
+                }
+            }, 15000); // Adjust the time (in milliseconds) before the tab appears
+        });
 
+        document.addEventListener("click", function (event) {
+            var popupTab = document.getElementById("popup-tab");
+            var closePopupTab = document.getElementById("close-popup-tab");
+
+            if (
+                event.target === popupTab ||
+                (closePopupTab && event.target === closePopupTab)
+            ) {
+                // Toggle the display of the popup tab
+                if (popupTab.style.display === "block") {
+                    popupTab.style.display = "none";
+                }
+            }
+        });
+    </script>
 
     <!-- jQuery -->
     <script src="js/jquery-3.0.0.min.js"></script>
