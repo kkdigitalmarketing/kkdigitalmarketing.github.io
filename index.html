@@ -232,7 +232,7 @@
             </div>
         </div>
     </header>
-
+    <!---popup tabs-->
 
     <div id="popup-tab" class="popup-tab">
         <div class="popup-tab-content">
@@ -247,6 +247,14 @@
     </div>
 
 
+    <div class="popup-image-container" id="popup-image-container">
+        <div class="popup-image-content">
+            <img src="profile img\festival.jpg" alt="Popup Image">
+            <span class="close-popup-image" id="close-popup-image">&times;</span>
+        </div>
+    </div>
+
+    <!--end poup-->
     <!-- ==================== End Slider ==================== -->
 
 
@@ -1030,7 +1038,7 @@
                 if (popupTab) {
                     popupTab.style.display = "block";
                 }
-            }, 15000); // Adjust the time (in milliseconds) before the tab appears
+            }, 30000); // Adjust the time (in milliseconds) before the tab appears
         });
 
         document.addEventListener("click", function (event) {
@@ -1058,6 +1066,39 @@
 
     <!-- custom scripts -->
     <script src="js/scripts.js"></script>
+
+
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            // Hide the image popup container when the page loads
+            var popupImageContainer = document.getElementById("popup-image-container");
+            if (popupImageContainer) {
+                popupImageContainer.style.display = "none";
+            }
+
+            setTimeout(function () {
+                var popupImageContainer = document.getElementById("popup-image-container");
+                if (popupImageContainer) {
+                    popupImageContainer.style.display = "block";
+                }
+            }, 10000); // Adjust the time (in milliseconds) before the image popup appears
+        });
+
+        document.addEventListener("click", function (event) {
+            var popupImageContainer = document.getElementById("popup-image-container");
+            var closePopupImage = document.getElementById("close-popup-image");
+
+            if (
+                event.target === popupImageContainer ||
+                (closePopupImage && event.target === closePopupImage)
+            ) {
+                // Toggle the display of the image popup container
+                if (popupImageContainer.style.display === "block") {
+                    popupImageContainer.style.display = "none";
+                }
+            }
+        });
+
+    </script>
 
 </body>
 
